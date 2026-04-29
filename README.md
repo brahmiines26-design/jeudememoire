@@ -35,7 +35,7 @@ Le jeu intègre des effets visuels, des animations, ainsi que des effets sonores
 
 #🌐 Lien vers la démo (GitHub Pages)
 
-https://brahmiines26-design.github.io/barbie-memory-game/
+[https://brahmiines26-design.github.io/barbie-memory-game/](https://github.com/brahmiines26-design/jeudememoire.git)
 
 Durant ce projet, plusieurs concepts ont été appris et approfondis :
 
