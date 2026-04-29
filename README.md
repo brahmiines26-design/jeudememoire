@@ -1,4 +1,6 @@
 # 💖 Barbie Memory Game
+https://github.com/brahmiines26-design
+https://github.com/brahmiines26-design/jeudememoire.git
 
 ## 📌 Description du projet
 
@@ -34,8 +36,8 @@ Le jeu intègre des effets visuels, des animations, ainsi que des effets sonores
 *  Blocage des clics pendant l’animation (anti-bug)
 
 #🌐 Lien vers la démo (GitHub Pages)
-
-[https://brahmiines26-design.github.io/barbie-memory-game/](https://github.com/brahmiines26-design/jeudememoire.git)
+https://github.com/brahmiines26-design
+(https://github.com/brahmiines26-design/jeudememoire.git)
 
 Durant ce projet, plusieurs concepts ont été appris et approfondis :
 
