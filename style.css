@@ -1,0 +1,123 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    color: white;
+
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+/* backgrounds */
+.level1 {
+    background-image: url("https://pyxis.nymag.com/v1/imgs/0f3/a4c/5da05bef26a61f153e142634014f9b396d-LEDE-Barbie-and-the-infinite-closet.rhorizontal.w700.png");
+}
+
+.level2 {
+    background-image: url("https://i.pinimg.com/736x/8d/d4/47/8dd44732ccef94d229055d82b6876c1a.jpg");
+}
+
+.win-bg {
+    background-image: url("https://cdn.shopify.com/s/files/1/0302/6927/6291/files/WhisperedRipeAltiplanochinchillamouse-max-1mb_480x480.gif?v=1689919995");
+}
+
+/* grille */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 130px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* carte */
+.card {
+    width: 130px;
+    height: 130px;
+    perspective: 1000px;
+}
+
+/* inner */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* flip */
+.card.flip .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* faces */
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+
+    backface-visibility: hidden;
+}
+
+/* front */
+.front {
+    transform: rotateY(180deg);
+}
+
+/* back */
+.back {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px white;
+}
+
+/* bouton */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #ff1493;
+    border-radius: 10px;
+}
+
+/* win */
+#win {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: pink;
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ✨ animation douce */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+.card {
+    animation: float 3s infinite;
+}
